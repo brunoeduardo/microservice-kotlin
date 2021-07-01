@@ -5,8 +5,8 @@ import io.micronaut.runtime.Micronaut.*
 suspend fun main(args: Array<String>) {
 
 	println("Hello World!")
-	val demosService = DemosService()
-	demosService.saveUser
+	//val demoService = DemoService()
+	//demoService.withWaitForReady().saveUser()
 
 	build()
 	    .args(*args)
