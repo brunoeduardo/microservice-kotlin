@@ -42,13 +42,13 @@ class DemoService {
             .build()
 
         val request2 = SaveUserRequest.newBuilder()
-            .setName("John")
-            .setLastName("Doe 2")
+            .setName("Jane")
+            .setLastName("Doe")
             .setDocument("07262438594")
             .build()
 
         val request3 = SaveUserRequest.newBuilder()
-            .setName("Jane")
+            .setName("John 2")
             .setLastName("Doe")
             .setDocument("09262438594")
             .build()

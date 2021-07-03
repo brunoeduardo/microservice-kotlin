@@ -3,8 +3,7 @@ package com.example
 import io.micronaut.runtime.Micronaut.*
 
 suspend fun main(args: Array<String>) {
-
-	println("Hello World!")
+	println("Start")
 	val demoService = DemoService()
 	// demoService.saveUser()
 	demoService.saveUserStream()

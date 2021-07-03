@@ -17,7 +17,7 @@ class DemoServerEndpoint: DemoServerServiceGrpcKt.DemoServerServiceCoroutineImpl
     override fun saveUserStream(requests: Flow<SaveUserRequest>): Flow<UserResponse> = flow {
         var id = 1
         requests.collect {
-            println("Save user...")
+            println("Save user..." + it.name + " " + it.lastName)
             emit(
                 UserResponse.newBuilder()
                     .setId(id++)
